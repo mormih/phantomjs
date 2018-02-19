@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+  phantomjs_build:
+    build: .
+    volumes:
+      - .:/src:rw
+      - ./build:/root/build:rw
+    command:
+      /bin/bash /src/deploy/docker-build.sh

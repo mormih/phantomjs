@@ -60,3 +60,5 @@ bin/
 .gradle/
 /.vs
 .vscode
+.idea/
+*.iml
